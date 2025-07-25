@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>SearchGloss | 文法用語↔︎グロス検索アプリ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: #14171a;
+      color: #f7f7f7;
+      font-family: 'Segoe UI', 'Noto Sans JP', 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: rgba(20, 23, 26, 0.95);
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+      max-width: 540px;
+      padding: 2.5em 2.8em 2em 2.8em;
+      margin: 2em 0;
+      text-align: left;
+    }
+    h1 {
+      font-size: 2.4em;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      margin: 0 0 0.6em 0;
+      color: #41c7c7;
+      text-align: center;
+    }
+    .subtitle {
+      font-size: 1.13em;
+      color: #b2ebeb;
+      margin-bottom: 1.4em;
+      text-align: center;
+    }
+    .description {
+      font-size: 1.08em;
+      margin-bottom: 2em;
+      color: #f7f7f7;
+      line-height: 1.85;
+      text-align: left;
+    }
+    .description p {
+      margin: 0 0 1.2em 0;
+    }
+    .description .keyword {
+      font-weight: 700;
+      color: #41c7c7;
+    }
+    .description .example {
+      font-style: italic;
+      color: #b2ebeb;
+      font-size: 0.98em;
+    }
+    .link-btn {
+      display: block;
+      width: 80%;
+      margin: 0 auto 1.6em auto;
+      padding: 0.8em 0;
+      font-size: 1.07em;
+      color: #14171a;
+      background: linear-gradient(90deg, #41c7c7 0%, #7ee6e6 100%);
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 1px 8px rgba(65,199,199,0.15);
+      transition: background 0.18s, color 0.18s;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+    .link-btn:hover {
+      background: linear-gradient(90deg, #32b5b5 0%, #6ed2d2 100%);
+      color: #fff;
+    }
+    .ack {
+      font-size: 0.97em;
+      color: #b2ebeb;
+      margin-top: 2em;
+      line-height: 1.7;
+      border-top: 1px solid #333;
+      padding-top: 1.2em;
+      text-align: left;
+    }
+    @media (max-width: 700px) {
+      .container {
+        max-width: 96vw;
+        padding: 1.2em 0.7em;
+      }
+      h1 {
+        font-size: 1.6em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SearchGloss</h1>
+    <div class="subtitle">文法用語↔︎グロス検索アプリ</div>
+    <div class="description">
+      <p>
+        <span class="keyword">SearchGloss</span>は、言語学の文法用語とグロス（例：<span class="example">与格 &rarr; DAT</span>）の相互検索ができるアプリです。
+      </p>
+      <p>
+        <strong>用途：</strong>任意の文法用語から、それに対応する主要なグロスを検索できます。また、グロスから文法用語を逆検索することも可能です。
+      </p>
+      <p>
+        <strong>書誌情報アクセス：</strong>各グロスの出典となる文法書・概説書の書誌情報にも簡単にアクセスできます。
+      </p>
+    </div>
+    <a class="link-btn" href="search.html">検索ページへ</a>
+    <div class="ack">
+      このアプリは九州大学下地理則研究室が開発したものであり、<br>
+      データはすべて元ゼミ生の宮岡大氏（鹿児島大学）が作成した「方言グロスリスト」（研究室HP「下地理則の研究室」内）をもとにしています。
+    </div>
+  </div>
+</body>
+</html>
